@@ -1,0 +1,18 @@
+def print_positive_numbers(input_list):
+    positive_numbers = [num for num in input_list if num > 0]
+    output = ', '.join(map(str, positive_numbers))
+    return output
+
+# Take input from the user for the first list
+input_list1 = [int(x) for x in input("Enter the first list of numbers separated by commas: ").split(',')]
+
+# Take input from the user for the second list
+input_list2 = [int(x) for x in input("Enter the second list of numbers separated by commas: ").split(',')]
+
+# Print the output for the first list
+output1 = print_positive_numbers(input_list1)
+print(f"Output 1: {output1}")
+
+# Print the output for the second list
+output2 = print_positive_numbers(input_list2)
+print(f"Output 2: {output2}")
